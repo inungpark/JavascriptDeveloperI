@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "firstName": "Melvin",
+    "lastName": "Lee",
+    "age": 37,
+    "smoker": false,
+    "children": null
+  },
+  "address": {
+    "streetNumber": 37,
+    "streetName": "Monmouth Boulevard",
+    "city": "Marlboro",
+    "state": "New Jersey",
+    "country": "USA"
+  },
+
+  "name": "White T-shirt",
+  "price": 5.99,
+  "inventory": [
+    { "size": "M", "quantity": 150 },
+    { "size": "L", "quantity": 100 }
+  ],
+  "returnable": true,
+  "customization": null
+}
+
