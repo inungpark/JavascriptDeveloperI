@@ -56,3 +56,38 @@ class User2 {
 }
 let user2 = new User2("Sarah", "James");
 console.log(user2.fullName());
+
+// In this example, getter and setter are used for the 'canReserve' property.
+class MeetingRoom2 {
+  constructor(capacity) {
+    this.capacity = capacity;
+    this.canReserve = false;
+  }
+  set reservable(val) {
+    this.canReserve = val;
+  }
+  get reservable() {
+    return this.canReserve;
+  }
+}
+let boardRoom2 = new MeetingRoom2(20);
+boardRoom2.reservable = true;
+console.log(boardRoom2.reservable);
+
+
+// In this example, getter and setter are used for the 'canReserve' property.
+class MeetingRoom3 {
+  constructor(capacity) {
+    this.capacity = capacity;
+    this.canReserve = false;
+  }
+  set reservable(val) {
+    this.canReserve = val;
+  }
+  get reservable() {
+    return this.canReserve;
+  }
+}
+let boardRoom3 = new MeetingRoom3(20);
+boardRoom3.reservable = true;
+console.log(boardRoom3.reservable);
