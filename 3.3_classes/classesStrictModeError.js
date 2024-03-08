@@ -7,8 +7,14 @@ class User {
     this.bothNames = lName + punctuation + fName;
   }
   fullName() {
-    returnthis.firstName + "" + this.lastName;
+    return this.firstName + "" + this.lastName;
+  }
+  fullNameP(){
+    return this.firstName + this.punctuation + this.lastName;
   }
 }
 let user1 = new User("Sarah", "James");
 console.log(user1.fullName());
+console.log(user1.fullNameP());
+
+

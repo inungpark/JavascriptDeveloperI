@@ -43,7 +43,7 @@ class User {
 let user1 = new User("team_lead", "team@cosmicsoft.com");
 console.log(user1);
 
-// In this example, an instance of the 'User' class is created.
+// In this example, an instance of the 'User2' class is created.
 // Then the 'fullName' method is invoked on the object.
 class User2 {
   constructor(fName, lName) {
@@ -74,7 +74,6 @@ let boardRoom2 = new MeetingRoom2(20);
 boardRoom2.reservable = true;
 console.log(boardRoom2.reservable);
 
-
 // In this example, getter and setter are used for the 'canReserve' property.
 class MeetingRoom3 {
   constructor(capacity) {
@@ -91,3 +90,40 @@ class MeetingRoom3 {
 let boardRoom3 = new MeetingRoom3(20);
 boardRoom3.reservable = true;
 console.log(boardRoom3.reservable);
+
+// This example includes a static method in the 'User3' class.
+class User3 {
+  constructor(fName, lName) {
+    this.firstName = fName;
+    this.lastName = lName;
+  }
+  fullName() {
+    return this.firstName + "" + this.lastName;
+  }
+  static isUser(obj) {
+    return obj instanceof User3;
+  }
+}
+let user3 = new User3("Michael", "Chin");
+// The static method 'isUser' is used to check if an object is an instance of the 'User3' class.
+console.log(User3.isUser(user3));
+
+// This example shows two classes named 'User' and 'Employee'.
+//The 'Employee' class extends the 'User' class.
+class User4 {
+  constructor() {
+    this.validUser = true;
+  }
+  isUser() {
+    return true;
+  }
+}
+class Employee extends User4 {
+  isEmployee() {
+    return true;
+  }
+}
+let employee1 = new Employee();
+console.log(employee1);
+console.log(employee1.isUser());
+console.log(employee1.isEmployee());
